@@ -1,6 +1,3 @@
-<<<<<<< HEAD
+.gitignore
 node_modules
-=======
-node_modules
->>>>>>> initial commit
-npm-debug.log
+.env
