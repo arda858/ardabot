@@ -2,7 +2,7 @@ module.exports = {
 	name: 'kick',
 	description: 'Kick a player',
 	execute(message) {
-		const permissions = message.member.voiceChannel.permissionsFor(message.client.user);
+		const permissions = message.member.voice.channel.permissionsFor(message.client.user);
 
 		if (!permissions.has('KICK_MEMBERS') || !message.member.hasPermission('KICK_MEMBERS')) {
 			return message.channel.send('You can\'t kick someone without the needed permissions');

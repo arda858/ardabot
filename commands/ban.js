@@ -2,7 +2,7 @@ module.exports = {
 	name: 'ban',
 	description: 'Ban a player',
 	execute(message) {
-		const permissions = message.member.voiceChannel.permissionsFor(message.client.user);
+		const permissions = message.member.voice.channel.permissionsFor(message.client.user);
 
 		if (!permissions.has('BAN_MEMBERS') || !message.member.hasPermission('BAN_MEMBERS')) {
 			return message.channel.send('You can\'t ban someone without the needed permissions');

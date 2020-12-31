@@ -7,7 +7,7 @@ module.exports = {
 		try {
 			deleteCount = parseInt(args[1], 10);
 		}catch(err) {
-			return message.reply('Please provide the number of messages to delete. (max 100)')
+			deleteCount = 99
 		}
         
 
